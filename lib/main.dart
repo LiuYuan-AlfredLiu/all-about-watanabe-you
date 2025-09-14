@@ -73,12 +73,6 @@ class _MainApp extends State<MainApp> {
           ),
         ),
 
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(20.5)
-          )
-        ),
-
         elevation: 0,
         centerTitle: true,
       ),

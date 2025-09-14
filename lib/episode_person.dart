@@ -126,8 +126,43 @@ class Episode1 extends StatelessWidget {
                 fontSize: 16.3
             ),
           ),
+        ),
+
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 0, 159, 232)
+              ),
+
+              child: Text(
+                'Next Episode 2',
+                style: TextStyle(
+                  fontSize: 17.5,
+                  color: Colors.white
+                ),
+              ),
+
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Episode2())
+                );
+              },
+            )
+          ],
         )
       ],
     );
+  }
+}
+
+class Episode2 extends StatelessWidget {
+  const Episode2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column();
   }
 }
