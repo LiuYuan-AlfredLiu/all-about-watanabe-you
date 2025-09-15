@@ -1,3 +1,4 @@
+import 'package:about_watanabe_you/story/episode_story.dart';
 import 'package:flutter/material.dart';
 
 class AboutEpisodePerson extends StatefulWidget {
@@ -46,14 +47,47 @@ class _AboutEpisodePerson extends State<AboutEpisodePerson> {
             padding: EdgeInsets.all(15.6),
             child: SingleChildScrollView(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [],
-              ),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Text(
+                      "Watanabe You Story",
+                      style: TextStyle(
+                        color: Colors.lightBlue,
+                        fontSize: 25.3,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Tokumin'
+                      ),
+                    ),
+                  ),
+
+                  Container(
+                    margin: EdgeInsets.only(top: 20),
+                    padding: EdgeInsets.all(10.3),
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        final EpisodeStory episodeStory = episodeStoryList[index];
+                        return InkWell();
+                      },
+                    ),
+                  )
+                ],
+              )
             )
           )
         ]
       )
     );
+  }
+}
+
+class StoryDescription extends StatelessWidget {
+  final EpisodeStory episodeStory;
+  const StoryDescription({super.key, required this.episodeStory});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
