@@ -129,27 +129,7 @@ class PersonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 10),
-            child: Center(
-              child: Text(
-                'You-chan person',
-                style: TextStyle(
-                  fontSize: 25.3,
-                  fontFamily: 'HarunoUmi',
-                  fontWeight: FontWeight.bold,
-                  color: Colors.lightBlue
-                ),
-              ),
-            ),
-          )
-        ],
-      ),
-    );
+    return SingleChildScrollView();
   }
 }
 
@@ -158,7 +138,7 @@ class PhotoAlbumPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return SingleChildScrollView();
   }
 }
 
@@ -167,6 +147,6 @@ class PhotoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return SingleChildScrollView();
   }
 }
