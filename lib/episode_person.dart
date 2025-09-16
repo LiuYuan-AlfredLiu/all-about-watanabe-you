@@ -62,16 +62,7 @@ class _AboutEpisodePerson extends State<AboutEpisodePerson> {
                     ),
                   ),
 
-                  Container(
-                    margin: EdgeInsets.only(top: 20),
-                    padding: EdgeInsets.all(10.3),
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        final EpisodeStory episodeStory = episodeStoryList[index];
-                        return InkWell();
-                      },
-                    ),
-                  )
+                  EpisodePerson()
                 ],
               )
             )
@@ -82,9 +73,93 @@ class _AboutEpisodePerson extends State<AboutEpisodePerson> {
   }
 }
 
-class StoryDescription extends StatelessWidget {
+class EpisodePerson extends StatelessWidget {
+  const EpisodePerson({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(
+        top: 5.6,
+        bottom: 10.2
+      ),
+
+      padding: const EdgeInsets.all(8.0),
+      child: ListView.builder(
+        shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
+        itemBuilder: (context, index) {
+          final EpisodeStory episodeStory = episodeStoryList[index];
+          return InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, episodeStoryPerson) => EpisodeStoryPerson(episodeStory: episodeStory),
+                    transitionsBuilder: (context, animation, aboutEpisodePerson, child) {
+                      const begin = Offset(1.2, 0.0);
+                      const end = Offset.zero;
+                      const curve = Curves.easeInOut;
+
+                      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                      var offsetAnimation = animation.drive(tween);
+
+                      return SlideTransition(
+                        position: offsetAnimation,
+                        child: child,
+                      );
+                    },
+
+                    transitionDuration: Duration(milliseconds: 1000)
+                )
+              );
+            },
+
+            child: Card(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12.2),
+                      child: Image.asset(episodeStory.episodePicture),
+                    ),
+                  ),
+
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                        top: 19.6,
+                        left: 13.6
+                      ),
+
+                      child: Text(
+                        episodeStory.episodeTitle,
+                        style: TextStyle(
+                          fontSize: 15.6,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          );
+        },
+
+        itemCount: episodeStoryList.length,
+      ),
+    );
+  }
+}
+
+class EpisodeStoryPerson extends StatelessWidget {
   final EpisodeStory episodeStory;
-  const StoryDescription({super.key, required this.episodeStory});
+  const EpisodeStoryPerson({super.key, required this.episodeStory});
 
   @override
   Widget build(BuildContext context) {
