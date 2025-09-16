@@ -95,8 +95,8 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (context, animation, aboutEpisodePerson) => AboutEpisodePerson(),
-                        transitionsBuilder: (context, animation, aboutEpisodePerson, child) {
+                        pageBuilder: (context, animation, episodePerson) => EpisodePerson(),
+                        transitionsBuilder: (context, animation, episodePerson, child) {
                           const begin = Offset(1.2, 0.0);
                           const end = Offset.zero;
                           const curve = Curves.easeInOut;
