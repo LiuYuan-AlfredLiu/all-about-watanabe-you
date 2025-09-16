@@ -97,7 +97,7 @@ class EpisodePerson extends StatelessWidget {
                 PageRouteBuilder(
                   pageBuilder: (context, animation, episodeStoryPerson) => EpisodeStoryPerson(episodeStory: episodeStory),
                     transitionsBuilder: (context, animation, aboutEpisodePerson, child) {
-                      const begin = Offset(1.2, 0.0);
+                      const begin = Offset(0.0, 1.3);
                       const end = Offset.zero;
                       const curve = Curves.easeInOut;
 
@@ -163,6 +163,38 @@ class EpisodeStoryPerson extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 81, 171, 241),
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.only(top: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: Text(
+                    episodeStory.episodeTitle,
+                    style: TextStyle(
+                      fontSize: 25.3,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
+                    ),
+                  ),
+                ),
+
+                Center(
+                  child: Image.asset(
+                    'image/logo.png',
+                    color: Colors.white,
+                    width: 50,
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
+      )
+    );
   }
 }
