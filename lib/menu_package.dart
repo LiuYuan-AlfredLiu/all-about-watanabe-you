@@ -23,24 +23,26 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            margin: EdgeInsets.only(top: 26.3),
+            margin: EdgeInsets.only(
+              top: 26.3,
+              right: 15.3,
+              left: 15.3
+            ),
+
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black38,
                   blurRadius: 10,
-                  offset: Offset(-3, 5),
+                  offset: Offset(12, 20),
                 )
               ]
             ),
 
-            child: Padding(
-              padding: EdgeInsets.all(15.6),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20.5),
-                child: Image.asset('image/photo/you-chan_cute.png'),
-              ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20.5),
+              child: Image.asset('image/photo/you-chan_cute.png'),
             )
           ),
 

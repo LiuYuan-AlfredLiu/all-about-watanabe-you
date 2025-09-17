@@ -32,7 +32,7 @@ class _EpisodePerson extends State<EpisodePerson> {
                   icon: Icon(
                     Icons.arrow_back,
                     color: Colors.white,
-                    size: 25,
+                    size: 35,
                   ),
 
                   onPressed: () {
@@ -209,18 +209,86 @@ class EpisodePersonDetail extends StatelessWidget {
             left: 10.6,
             child: Card(
               color: Colors.black54,
-              child: IconButton(
-                icon: Icon(
-                  Icons.arrow_back,
-                  color: Colors.white,
-                  size: 35,
-                ),
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: IconButton(
+                  icon: Icon(
+                    Icons.arrow_back,
+                    color: Colors.white,
+                    size: 35,
+                  ),
 
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
               ),
             ),
+          ),
+
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 700,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(20.5),
+                  topLeft: Radius.circular(20.5)
+                )
+              ),
+
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                          top: 26.5,
+                          right: 15.3,
+                          left: 15.3,
+                          bottom: 12.3
+                      ),
+
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black38,
+                            blurRadius: 10,
+                            offset: Offset(10.5, 15.6)
+                          )
+                        ]
+                      ),
+
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.5),
+                        child: Image.asset(episodeStory.episodePicture),
+                      ),
+                    ),
+
+                    Container(
+                      margin: EdgeInsets.only(
+                        top: 30.5,
+                        left: 25.5,
+                        right: 25.5,
+                        bottom: 10.6
+                      ),
+
+                      child: Text(
+                        episodeStory.episodeDescription,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 18.6
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
+            )
           )
         ],
       )
