@@ -1,3 +1,4 @@
+import 'package:about_watanabe_you/all_stars_photo.dart';
 import 'package:about_watanabe_you/episode_person.dart';
 import 'package:about_watanabe_you/personality_about.dart';
 import 'package:flutter/material.dart';
@@ -143,7 +144,37 @@ class PhotoAlbumPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView();
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(top: 20.5),
+            child: Center(
+              child: Text(
+                "All You-chan Photo",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.lightBlue,
+                  fontFamily: 'Tokumin'
+                ),
+              ),
+            ),
+          ),
+
+          Container(
+            margin: EdgeInsets.only(
+              top: 35.3,
+              left: 20.0,
+              right: 20.0,
+              bottom: 10.5
+            ),
+
+            child: AllStarsPhoto(),
+          )
+        ],
+      ),
+    );
   }
 }
 

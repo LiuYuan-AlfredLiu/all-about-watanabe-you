@@ -73,6 +73,7 @@ flutter:
   assets:
     - image/photo/
     - image/episode/
+    - image/love_live_sif_all_stars/
     - image/CYaRon.png
     - image/logo.png
 

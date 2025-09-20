@@ -1,4 +1,4 @@
-import 'package:about_watanabe_you/story/episode_story.dart';
+import 'package:about_watanabe_you/list/episode_story.dart';
 import 'package:flutter/material.dart';
 
 class EpisodePerson extends StatefulWidget {
