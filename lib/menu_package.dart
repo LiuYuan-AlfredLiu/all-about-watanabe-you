@@ -162,16 +162,7 @@ class PhotoAlbumPage extends StatelessWidget {
             ),
           ),
 
-          Container(
-            margin: EdgeInsets.only(
-              top: 35.3,
-              left: 20.0,
-              right: 20.0,
-              bottom: 10.5
-            ),
-
-            child: AllStarsPhoto(),
-          )
+          AllStarsPhoto()
         ],
       ),
     );
