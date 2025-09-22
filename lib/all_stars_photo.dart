@@ -204,6 +204,9 @@ class _AllStarsPhotoAbout extends State<AllStarsPhotoAbout> {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(20.5),
+                          child: Text(
+                            "You-chan Description"
+                          ),
                         ),
                       )
                     ]
