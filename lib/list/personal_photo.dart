@@ -29,5 +29,13 @@ var personaPhotoList = [
     role: "SP"
   ),
 
-
+  PersonPhoto(
+    photo: "image/love_live_sif_all_stars/aquarium_date.png",
+    idolPhoto: "image/love_live_sif_all_stars/rabbit_in_wonderland.png",
+    title: "Aquarium Date",
+    idolTitle: "Rabbit in Wonderland",
+    rank: "Ultra rare",
+    attribute: "Cool",
+    role: "Guard"
+  )
 ];

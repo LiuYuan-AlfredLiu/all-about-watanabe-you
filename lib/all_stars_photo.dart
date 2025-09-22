@@ -22,9 +22,27 @@ class AllStarsPhoto extends StatelessWidget {
         children: personaPhotoList.map((photoList) {
           return InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return AllStarsPhotoAbout(personPhoto: photoList);
-              }));
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, episodePhotoAbout) => AllStarsPhotoAbout(personPhoto: photoList),
+                  transitionsBuilder: (context, animation, episodePhotoAbout, child) {
+                    const begin = Offset(1.5, 0.0);
+                    const end = Offset.zero;
+                    const curve = Curves.bounceInOut;
+
+                    var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                    var offsetAnimation = animation.drive(tween);
+
+                    return SlideTransition(
+                      position: offsetAnimation,
+                      child: child,
+                    );
+                  },
+
+                  transitionDuration: Duration(milliseconds: 1500)
+                )
+              );
             },
 
             borderRadius: BorderRadius.circular(20.5),
@@ -81,6 +99,78 @@ class AllStarsPhotoAbout extends StatefulWidget {
 class _AllStarsPhotoAbout extends State<AllStarsPhotoAbout> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.only(top: 10),
+              child: Text(
+                "${widget.personPhoto.title} / ${widget.personPhoto.idolTitle}",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 25.5,
+                  color: Colors.lightBlue
+                ),
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 23.6),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.5),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black26,
+                          offset: Offset(10, 12),
+                          blurRadius: 10
+                        )
+                      ]
+                    ),
+
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.5),
+                      child: Image.asset(
+                        widget.personPhoto.photo,
+                        fit: BoxFit.cover,
+                        width: 180,
+                      ),
+                    )
+                  ),
+
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.5),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black26,
+                          offset: Offset(10, 12),
+                          blurRadius: 10
+                        )
+                      ]
+                    ),
+
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.5),
+                      child: Image.asset(
+                        widget.personPhoto.idolPhoto,
+                        fit: BoxFit.cover,
+                        width: 180,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
