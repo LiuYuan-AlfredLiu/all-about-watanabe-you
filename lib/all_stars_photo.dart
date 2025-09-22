@@ -167,6 +167,49 @@ class _AllStarsPhotoAbout extends State<AllStarsPhotoAbout> {
                   )
                 ],
               ),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 20.5),
+              child: Table(
+                border: TableBorder.all(
+                  color: Colors.lightBlue,
+                  width: 2
+                ),
+
+                defaultVerticalAlignment: TableCellVerticalAlignment.baseline,
+                children: [
+                  TableRow(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(166, 3, 169, 244)
+                    ),
+
+                    children: [
+                      TableCell(
+                        child: Padding(
+                          padding: EdgeInsets.all(20.5),
+                          child: Text(
+                            "Description Name",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 19.5,
+                              fontFamily: 'Tokumin',
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      TableCell(
+                        child: Padding(
+                          padding: EdgeInsets.all(20.5),
+                        ),
+                      )
+                    ]
+                  )
+                ],
+              ),
             )
           ],
         ),
