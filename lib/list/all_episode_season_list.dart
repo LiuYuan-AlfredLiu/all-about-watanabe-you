@@ -81,4 +81,93 @@ var allEpisodeSeasonFirstList = [
         "they did not have any lyrics written, and together the three of them tried "
         "writing lyrics at the Takami family’s ryokan."
   ),
+
+  AllEpisodeSeasonFirst(
+      episodePicture: "image/episode/s1_ep3.jpg",
+      episodeTitle: "First Step",
+      episodeDescription: "In Episode 3, Chika-chan, You-chan, and Riko-chan were "
+          "training on the beach when they saw the Ohara family's helicopter flying "
+          "by, which eventually landed near them.\n\n"
+
+          "With Mari-chan's arrival to the school, she introduced herself as the new "
+          "chairwoman of Uranohoshi Girls' High School. Dia-san, who knew Mari-chan "
+          "back from their first year in Uranohoshi, pointed out how unbelievable "
+          "it was for a third year to be the new chairwoman. Mari-san showed her "
+          "proof and stated that she came to support Chika-chan, You-chan, and Riko-chan. "
+          "She then challenged them to fill the gym with audience in order to get "
+          "her approval for their School Idol Club. The three second year students "
+          "realized that there weren't enough students in their school to fill the "
+          "gym, which caused them to advertise their concert in other places as well.\n\n"
+
+          "They started handing out flyers in front of Numazu Station, where Riko-chan "
+          "unknowingly met a disguised Yoshiko while advertising their concert.\n\n"
+
+          "While training, Chika-chan, You-chan, and Riko-chan thought up of possible "
+          "names for their currently nameless school idol group. They soon stumbled "
+          "upon the name \"Aqours\", which was written on the beach, and decided to "
+          "use it as their school idol group's name.\n\n"
+
+          "The newly-named school idol group Aqours continued to advertise their upcoming "
+          "concert. In Chika-chan's house, Aqours continued to work on their dance "
+          "steps until Riko-chan and You-chan noticed that Chika-chan fell asleep, "
+          "and decided to call it a day. Shima, Chika-chan's elder sister, drove You-chan "
+          "home as no buses ran when it is late at night.\n\n"
+
+          "Before their concert, Aqours worried about people not attending due to "
+          "the rain. They laughed it off and stood behind the stage's curtain, hand "
+          "in hand. However, when the curtains raised, they only had a small group "
+          "of audience. Included in the audience were Mari-san, Ruby-chan, Hanamaru-chan, "
+          "and a disguised Yoshiko-chan. Despite this, they continued their concert "
+          "and performed \"Daisuki dattara Daijoubu!\" while Kanan-chan and Dia-san "
+          "listened from outside the gym.\n\n"
+
+          "A power outage occurred halfway through the song, halting their performance. "
+          "Chika-chan continued to sing, followed by You-chan and Riko-chan, until "
+          "she started to cry. Right before they lost hope, Chika-chan's sister Mito-san "
+          "arrived and said that Chika-chan told her the wrong start time. Meanwhile, "
+          "Dia-san secretly hooked up a backup generator and the power returned, which "
+          "illuminated the gym that was filled with audience. Aqours then resumed "
+          "their performance.\n\n"
+
+          "After Aqours's concert, Dia-san went in front of them then said that their "
+          "success was only due to the efforts of previous school idols and the town's "
+          "good will. Chika-chan answered she knew it but that it was their only chance "
+          "to shine."
+  ),
+
+  AllEpisodeSeasonFirst(
+      episodePicture: "image/episode/s1_ep4.jpg",
+      episodeTitle: "Two Girls' Feelings",
+      episodeDescription: "In episode 4, the school idol club was finally approved "
+          "by Mari-chan, much to the second years' delight. Although, they questioned "
+          "why she was so keen on helping them. Entering their new club room for "
+          "the first time, they realized it would need intensive cleaning up before "
+          "they would be able to use it.\n\n"
+
+          "Chika-chan, Riko-chan and You-chan entered the library to return books "
+          "they had found while cleaning up, just as Ruby-chan was excitedly telling "
+          "Hanamaru-chan the news of the school idol club officially being formed. "
+          "Once again, Chika tried recruiting the duo as school idols.\n\n"
+
+          "Kanan-chan impressed the second years with her stamina, running past "
+          "them as they were trying to raise their own stamina by running up stairs "
+          "like μ's.\n\n"
+
+          "Met by a very excited Chika-chan, Ruby-chan and Hanamaru-chan started "
+          "a trial period as members of the school idol club, saying they would "
+          "join if they liked it. Short of a place to practice, the school idol "
+          "club ended up taking their dance practice to the rooftop, inspired by "
+          "μ's.\n\n"
+
+          "After Ruby-chan officially joined the school idol club, she confronted "
+          "Hanamaru-chan at the library. Ruby-chan explained how she suspected that "
+          "Hanamaru-chan went along just because she thought being a school idol "
+          "was something Ruby-chan wanted to do, but that she also thought maybe "
+          "Hanamaru-chan was interested herself. Ruby-chan drew a parallell to Hoshizora"
+          "Rin also thinking she was not fit to be a school idol, and admitted she "
+          "had always wanted to become a school idol with Hanamaru-chan. Hanamaru-chan "
+          "finally agreed to become a school idol after Riko-chan, You-chan and "
+          "Chika-chan entered the library, Chika-chan saying what matters is the "
+          "will to do it, rather than your skills."
+  )
 ];

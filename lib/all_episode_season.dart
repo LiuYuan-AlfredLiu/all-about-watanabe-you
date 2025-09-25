@@ -178,7 +178,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
             children: [
               Container(
                 margin: EdgeInsets.only(
-                  top: 45.3,
+                  top: 120,
                   left: 20,
                   right: 20
                 ),
@@ -189,7 +189,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 32.5
+                    fontSize: 28.6
                   ),
                 ),
               ),
@@ -231,7 +231,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              height: 630,
+              height: 583,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -239,6 +239,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
                   topRight: Radius.circular(20.6)
                 )
               ),
+              padding: EdgeInsets.all(10),
 
               child: SingleChildScrollView(
                 child: Column(
@@ -246,7 +247,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       margin: EdgeInsets.only(
-                        top: 36.5,
+                        top: 30,
                         left: 20,
                         right: 20
                       ),
