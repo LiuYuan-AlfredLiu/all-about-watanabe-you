@@ -189,6 +189,7 @@ class EpisodeSeasonDetail extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontFamily: "HarunoUmi",
                     fontSize: 28.6
                   ),
                 ),

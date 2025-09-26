@@ -85,9 +85,16 @@ class _AllWatanabeYouPhoto extends State<AllWatanabeYouPhoto> {
   }
 }
 
-class AllWatanabeYouPhotoDetail extends StatelessWidget {
+class AllWatanabeYouPhotoDetail extends StatefulWidget {
   final AllWatanabeYouPhotoList photoList;
   const AllWatanabeYouPhotoDetail({super.key, required this.photoList});
+
+  @override
+  State<AllWatanabeYouPhotoDetail> createState() => _AllWatanabeYouPhotoDetail();
+}
+
+class _AllWatanabeYouPhotoDetail extends State<AllWatanabeYouPhotoDetail> {
+  int indexArray = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -95,62 +102,118 @@ class AllWatanabeYouPhotoDetail extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
+        children: <Widget>[
           Container(
-            margin: EdgeInsets.only(top: 25.6),
+            margin: EdgeInsets.only(top: 23.9),
             child: Text(
-              "${photoList.title} / ${photoList.idolTitle}",
+              "${widget.photoList.title} / ${widget.photoList.idolTitle}",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 19.7,
-                fontFamily: 'HarunoUmi',
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 102, 192, 255)
+                fontFamily: 'HarunoUmi',
+                color: Color.fromARGB(255, 102, 192, 255),
+                fontSize: 20
               ),
+            ),
+          ),
+          
+          Container(
+            margin: EdgeInsets.only(
+              top: 40.5,
+              left: 20,
+              right: 20,
+              bottom: 20
+            ),
+
+            child: Stack(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 10,
+                        offset: Offset(11.8, 18.6),
+                        color: Colors.black26
+                      )
+                    ]
+                  ),
+
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset(
+                      indexArray % 2 == 0 ? widget.photoList.photo : widget.photoList.idolPhoto
+                    ),
+                  ),
+                ),
+
+                Positioned(
+                  bottom: 3,
+                  right: 10,
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.change_circle,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+
+                    onPressed: changesImage
+                  ),
+                )
+              ],
             ),
           ),
 
           Container(
-            margin: EdgeInsets.only(top: 10),
-            child: Padding(
-              padding: EdgeInsets.all(32.5),
-              child: SizedBox(
-                height: 180,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(bottom: 10),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(30),
-                        child: Image.asset(
-                          photoList.photo,
-                          fit: BoxFit.cover,
+            margin: EdgeInsets.only(
+              top: 23.6,
+              left: 20,
+              right: 20,
+              bottom: 17.3
+            ),
+
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 5.3),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Rank",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.lightBlueAccent,
+                          fontSize: 17.6,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Tokumin'
+                        ),
+                      ),
+
+                      Text(
+                        widget.photoList.rank,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17.6,
+                          fontFamily: 'Tokumin'
                         ),
                       )
-                    ),
-
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 30,
-                        bottom: 10
-                      ),
-
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(30),
-                        child: Image.asset(
-                          photoList.idolPhoto,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
+                    ],
+                  ),
+                )
+              ],
             ),
-          ),
+          )
         ],
       ),
     );
+  }
+
+  void changesImage() {
+    setState(() {
+      indexArray += 1;
+    });
   }
 }
