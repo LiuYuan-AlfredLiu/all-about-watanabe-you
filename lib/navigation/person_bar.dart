@@ -27,9 +27,9 @@ class PersonBar extends StatelessWidget {
         children: <Widget>[
           Container(
             margin: EdgeInsets.only(
-                top: 23.5,
-                left: 15.9,
-                right: 15.9,
+                top: 40,
+                left: 25.3,
+                right: 25.3,
                 bottom: 30
             ),
 
@@ -39,7 +39,7 @@ class PersonBar extends StatelessWidget {
                 BoxShadow(
                     color: Colors.black26,
                     blurRadius: 10,
-                    offset: Offset(10, 21)
+                    offset: Offset(12.5, 21)
                 )
               ],
             ),
@@ -47,6 +47,21 @@ class PersonBar extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
               child: Image.asset('image/photo/you-chan_happy.png'),
+            ),
+          ),
+
+          Container(
+            margin: EdgeInsets.only(top: 23.5),
+            child: Center(
+              child: Text(
+                "You-chan personal",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                  fontFamily: 'HarunoUmi',
+                  color: Colors.lightBlue
+                ),
+              ),
             ),
           ),
 

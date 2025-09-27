@@ -11,7 +11,7 @@ class PhotoAlbumBar extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.only(
-                  top: 40.6,
+                  top: 40,
                   left: 25.3,
                   right: 25.3
               ),
@@ -22,7 +22,7 @@ class PhotoAlbumBar extends StatelessWidget {
                     BoxShadow(
                         color: Colors.black26,
                         blurRadius: 10,
-                        offset: Offset(15, 16.5)
+                        offset: Offset(12.5, 21)
                     )
                   ]
               ),
@@ -45,7 +45,7 @@ class PhotoAlbumBar extends StatelessWidget {
                 "All You-chan Photo",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Color.fromARGB(255, 102, 192, 255),
+                    color: Colors.lightBlue,
                     fontWeight: FontWeight.bold,
                     fontSize: 25.2,
                     fontFamily: 'Tokumin'

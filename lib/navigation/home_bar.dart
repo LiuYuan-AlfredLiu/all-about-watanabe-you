@@ -25,9 +25,9 @@ class HomeBar extends StatelessWidget {
         children: [
           Container(
               margin: EdgeInsets.only(
-                  top: 26.3,
-                  right: 15.2,
-                  left: 15.2
+                  top: 40,
+                  right: 25.3,
+                  left: 25.3
               ),
 
               decoration: BoxDecoration(
@@ -36,7 +36,7 @@ class HomeBar extends StatelessWidget {
                     BoxShadow(
                         color: Colors.black26,
                         blurRadius: 10,
-                        offset: Offset(10, 21)
+                        offset: Offset(12.5, 21)
                     )
                   ]
               ),
