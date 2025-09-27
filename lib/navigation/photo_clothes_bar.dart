@@ -5,6 +5,8 @@ class PhotoClothesBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView();
+    return SingleChildScrollView(
+      child: Container(),
+    );
   }
 }
