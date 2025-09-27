@@ -33,7 +33,7 @@ class PhotoClothesBar extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(top: 16.3),
+            margin: EdgeInsets.only(top: 40.3),
             child: Text(
               "All You-chan Clothes",
               textAlign: TextAlign.center,
@@ -44,6 +44,10 @@ class PhotoClothesBar extends StatelessWidget {
                 color: Colors.lightBlue
               ),
             ),
+          ),
+
+          Container(
+            margin: EdgeInsets.only(top: 21.6),
           )
         ],
       )
