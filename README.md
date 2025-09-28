@@ -3,4 +3,9 @@
 All About You-chan
 
 1. **Pengembangan UI/UX**
-   - UI/UX yang ada di dalam hanphone ini memiliki banyak sekali keunikan, seperti navbar yang bisa 
+   - Memiliki UI/UX yang sederhana dan simpel.
+   - Perpindahan page dengan animasi.
+   - Scrolling dengan sentuhan tangan yang smooth.
+   
+2. **Fungsi dari pembuatan aplikasi**
+   Memungkinkan para fandom dari Love Live Sunshine lebih mengenal karakter ini.
