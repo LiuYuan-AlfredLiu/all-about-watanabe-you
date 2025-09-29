@@ -169,5 +169,39 @@ var allEpisodeSeasonFirstList = [
           "finally agreed to become a school idol after Riko-chan, You-chan and "
           "Chika-chan entered the library, Chika-chan saying what matters is the "
           "will to do it, rather than your skills."
+  ),
+
+  AllEpisodeSeasonFirst(
+    episodePicture: "image/episode/s1_ep5.jpg",
+    episodeTitle: "Yohane Descends",
+    episodeDescription: "In episode 5, The school idol club, now with five members, "
+        "were looking at their ranking and comments online. Hanamaru-chan was revealed "
+        "to never have seen a computer before, due to living in a temple without "
+        "many electronics. The members of Aqours wondered how they could stand out "
+        "more in order to raise their popularity.\n\n"
+
+        "Whimpering in the school idol clubroom, Yoshiko-chan explained she knew "
+        "she was not a fallen angel and wanted to be a normal high school student. "
+        "Chika-chan, on the other hand, got the idea of fallen angel idols as a "
+        "way to make them stand out more. Therefore, she asked Yoshiko-chan if she "
+        "wanted to become a school idol, addressing her as \"Fallen Angel "
+        "Yohane-chan\".\n\n"
+
+        "Much to Dia-san’s dismay, the school idol club uploaded a fallen angel "
+        "themed video online using their new costumes. Dia-san showed the Aqours "
+        "members that the initial boost in rankings the video had gotten them was "
+        "already declining and their rank was dropping. This broke the spirits of "
+        "the school idols, causing Chika-chan to second guess their trying to be "
+        "like μ's and Yoshiko to once again say she wanted to be a normal high "
+        "schooler and quit the school idol club.\n\n"
+
+        "The day after Hanamaru-chan made the other Aqours members understand why "
+        "Yoshiko-chan had wanted to be a fallen angel in the first place, they "
+        "confronted Yoshiko-chan wearing their new costumes and asked if she wanted "
+        "to join Aqours as the fallen angel Yohane-chan. Chika-chan yelled to the "
+        "fleeing Yoshiko-chan that she was fine the way she was and that μ's got "
+        "so popular due to their being themselves and not caring about what others "
+        "thought. After being assured all the members of the school idol club were "
+        "okay with her antics, Yoshiko accepted their offer and joined."
   )
 ];

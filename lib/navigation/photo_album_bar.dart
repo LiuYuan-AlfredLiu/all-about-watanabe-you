@@ -75,6 +75,7 @@ class _AllWatanabeYouPhoto extends State<AllWatanabeYouPhoto> {
       crossAxisSpacing: 5,
       mainAxisSpacing: 5,
       shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       children: allWatanabeYouList.map((photoList) {
         return InkWell(
           onTap: () {
