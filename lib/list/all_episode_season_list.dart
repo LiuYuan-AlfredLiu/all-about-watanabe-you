@@ -203,5 +203,46 @@ var allEpisodeSeasonFirstList = [
         "so popular due to their being themselves and not caring about what others "
         "thought. After being assured all the members of the school idol club were "
         "okay with her antics, Yoshiko accepted their offer and joined."
-  )
+  ),
+
+  AllEpisodeSeasonFirst(
+    episodePicture: "image/episode/s1_ep6.jpg",
+    episodeTitle: "Let's Make a PV",
+    episodeDescription: "In episode 6, news of the school possibly being closed "
+        "and merged with a school in Numazu reached Chika-chan, and she was overjoyed "
+        "to be put in a similar situation to the one μ's faced, becoming motivated "
+        "to do more school idol activities in order to save the school. After some "
+        "careful thinking, Aqours decided to create a promotional video, with the "
+        "purpose of showing people what made their small town Uchiura a great place. "
+        "They all went out to film, but most of the things the group could come up "
+        "with seemed quite unimpressive after reconsideration. The group gathered "
+        "at a café to think things through, and Chika realized that what they had "
+        "at their current school was something special she did not want to lose.\n\n"
+
+        "Showing the chairwoman their promotional video, Mari-chan told Chika-chan "
+        "and the rest of Aqours that they did not know what it was that made their "
+        "town and their school great. After Mari-chan proclaimed she knew better "
+        "herself, Chika-chan decided not to ask about it, considering it something "
+        "they had to figure out for themselves for it to be worth something.\n\n"
+
+        "On her way to the clubroom Chika-chan spotted Dia-san on stage in the empty "
+        "auditorium. While she did decline Chika-chan’s offer of joining the school "
+        "idol club, Dia-san stated she was happy that they wanted to save the school. "
+        "As Dia-san was leaving the room, Ruby-chan stopped Chika-chan from calling "
+        "out to her, and a flashback showed the third years seemingly right before "
+        "a school idol performance. Mari-chan showed up and told Dia-san you can’t "
+        "run away, only move forward, but Dia-san denied she had been trying to "
+        "run away.\n\n"
+
+        "In accordance with Uchiura tradition, all the town members gathered early "
+        "in the morning of the first day of beach season to make and release floating "
+        "lanterns. Riko-chan, for whom it was the first time experiencing the tradition, "
+        "talked about how she did not realize there were so many people living in "
+        "the town and suggested that maybe that was the special thing about Uchiura "
+        "and Uranohoshi Girls’ High School. Hearing this, Chika-chan gathered everyone’s "
+        "attention and introduced Aqours, saying they needed the help of everyone "
+        "in town to save their school. \"Yume de Yozora o Terashitai\" was performed "
+        "as an insert song by the currently six Aqours members, thus concluding "
+        "the episode."
+  ),
 ];
